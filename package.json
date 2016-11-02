@@ -1,0 +1,16 @@
+{
+  "name": "bird-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Cris Feo",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "0.22.x",
+    "eslint": "3.9.x",
+    "fluture": "4.0.x",
+    "needle": "1.3.x",
+    "ramda": "0.22.x",
+    "sanctuary": "0.11.x"
+  }
+}
