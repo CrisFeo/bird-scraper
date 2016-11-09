@@ -1,6 +1,6 @@
 JSCTAGS=node_modules/.bin/jsctags
 
-SRC_JS=index.js
+SRC_JS=$(shell find . -type f -name '*.js' -not -path '*/node_modules/*')
 
 .PHONY: setup
 setup:

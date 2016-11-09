@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const crawlSearch = require('../src/crawl-search');
+
+
+// One page query: 'Rhabdornis'
+// Two page query: 'Alpine'
+// Six page query: 'Abyssinian'
+// All page query: ' '/''/null/undefined
+
+crawlSearch(process.argv.slice(2, 3)).fork(s => process.stderr.write(s + '\n'),
+                                           s => process.stdout.write(s + '\n'));
